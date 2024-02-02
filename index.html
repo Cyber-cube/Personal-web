@@ -10,44 +10,34 @@
         justify-content: center;
       }
       .btn-popup-div {
-        position: -1;
+        z-index: 1;
         width: 0%;
         height: 100%;
+        top: 0;
+        left: 0;
       }
-      .btn-popup-items {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        background-color: #555;
+      .btn-popup-div a {
+        top: 0;
+        left: 0;
         color: white;
         font-size: 16px;
-        padding: 12px 24px;
-        border: none;
-        cursor: pointer;
-        border-radius: 5px;
-        text-align: center;
+        padding: 8px 8px 8px 32px;
       }
     </style>
   </head>
   <body>
     <h1>Hello there</h1>
     <p>Hello there, how are you ????</p>
-    <button onclick='showDiv()'></button>
+    <button onclick="showDiv()">Show</button>
     <div class="btn-popup-div">
-      <a href="javaScript:void(0)" class="btn-popup-items">Close</a>
-      <a href="#" class="btn-popup-items">About</a>
-      <a href="home" class="btn-popup-items">Home</a>
+      <a href="javascript:void(0)" class="btn-popup-items">Close</a><br>
+      <a href="#" class="btn-popup-items">About</a><br>
+      <a href="#" class="btn-popup-items">Home</a><br>
     </div>
     <div class="centre-div">
       <h3>Hi there</h3>
       <p>Your a nerd</p>
     </div>
-    <script>
-      function showDiv() {
-        document.querySelector(".btn-popup-div").style.width = "40%";
-        document.querySelector(".btn-popup-div"").style.position = 1;
-      }
-    </script>
+    <script src="script.js"></script>
   </body>
 </html>
