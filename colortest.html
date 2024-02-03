@@ -4,13 +4,28 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <title>Color test</title>
+    <style>
+      :root {
+        --red: #000000;
+        --green: #000000;
+        --blue: #000000;
+      }
+      #color {
+        width: 100px;
+        height: 100px;
+        background-color: rgb(var(--red), var(--green), var(--blue));
+        display: flex;
+        justify-content: center;
+        border: 1px solid black;
+      }
+    </style>
   </head>
   <body>
     <input type="range" min="0" max="255" value="0" class="slider" id="redSlider">
-    <article id="redValue">0</article>
     <input type="range" min="0" max="255" value="0" class="slider" id="greenSlider">
-    <article id="greenValue">0</article>
     <input type="range" min="0" max="255" value="0" class="slider" id="blueSlider">
-    <article id="blueValue">0</article>
+    <article id="output">RGB(0, 0, 0)</article>
+    <div id="color"></div>
+    <script src="colortest.js"></script>  
   </body>
 </html>
