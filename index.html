@@ -14,7 +14,10 @@
         position: fixed;
         width: 0%;
         height: 100%;
-        background-color: #555;
+        background-image: linear-gradient(rgb(0, 10, 50), rgb(0, 10, 0));
+        overflow-x: hidden;
+        transition-duration: 0.5s;
+        padding-top: 50px;
       }
       .btn-popup-div .btn-popup-items {
         top: 0;
@@ -23,15 +26,17 @@
         font-size: 16px;
         padding: 8px 8px 8px 32px;
       }
+      
     </style>
   </head>
   <body>
-    <button onclick="showDiv()">Show</button>
     <div class="btn-popup-div">
-      <button class="btn-popup-items" onclick="hideDiv()">Close</button><br>
+      <a class="btn-popup-items" onclick="hideDiv()">Close</a><br>
       <a href="#" class="btn-popup-items">About</a><br>
       <a href="#" class="btn-popup-items">Home</a><br>
+      <a href="colortest.html" class="btn-popup-items">Color test</a><br>
     </div>
+    <img src="https://cdn-icons-png.flaticon.com/128/54/54878.png" onclick="showDiv()"></img>
     <div class="centre-div">
       <h3>Hi there</h3>
       <p>Your a nerd</p>
