@@ -4,43 +4,21 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <title>Personal web</title>
-    <style>
-      .centre-div {
-        display: flex;
-        justify-content: center;
-      }
-      .btn-popup-div {
-        z-index: 1;
-        position: fixed;
-        width: 0%;
-        height: 100%;
-        background-image: linear-gradient(rgb(0, 10, 50), rgb(0, 10, 0));
-        overflow-x: hidden;
-        transition-duration: 0.5s;
-        padding-top: 50px;
-      }
-      .btn-popup-div .btn-popup-items {
-        top: 0;
-        left: 0;
-        color: white;
-        font-size: 16px;
-        padding: 8px 8px 8px 32px;
-      }
-      
-    </style>
+    <link rel="stylesheet" href="css/style.css"/>
   </head>
   <body>
     <div class="btn-popup-div">
       <a class="btn-popup-items" onclick="hideDiv()">Close</a><br>
       <a href="#" class="btn-popup-items">About</a><br>
       <a href="#" class="btn-popup-items">Home</a><br>
-      <a href="colortest.html" class="btn-popup-items">Color test</a><br>
+      <a href="html/colortest.html" class="btn-popup-items">Color test</a><br>
     </div>
-    <img src="https://cdn-icons-png.flaticon.com/128/54/54878.png" onclick="showDiv()"></img>
+    <img id="hi" src="https://cdn-icons-png.flaticon.com/128/54/54878.png" onclick="showDiv()"></img>
     <div class="centre-div">
       <h3>Hi there</h3>
       <p>Your a nerd</p>
     </div>
-    <script src="script.js"></script>
+    
+    <script src="../javascript/script.js"></script>
   </body>
 </html>
