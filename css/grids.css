@@ -1,0 +1,53 @@
+@keyframes right-to-left {
+  from {
+    transform: translateX(calc(100% - 100px))
+  }
+  to {
+    transform: translateX(calc(100% - 210px))
+  }
+}
+@keyframes left-to-right {
+  from {
+    transform: translateX(clac(100% - 210px))
+  }
+  to {
+    transform: translateX(110px)
+  }
+} 
+
+.container {
+  display: grid;
+  width: 150px;
+  height: 150px;
+  grid-template-columns: repeat(4, 100px);
+  grid-template-rows: repeat(4, 100px);
+  grid-gap: 10px;
+}
+
+.item {
+  position: relative;
+  height: 100px;
+  width: 100px;
+}
+.item-1 {
+  grid-row: 1 / 1;
+  grid-column: 1 / 1;
+  background-color: #ccc;
+  animation: left-to-right 1s;
+}
+.item-2 {
+  grid-row: 1 / 1;
+  grid-column: 2 / 2;
+  background-color: orange;
+  animation: right-to-left 1s;
+}
+.item-3 {
+  grid-row: 2 / 2;
+  grid-column: 1 / 1;
+  background-color: orange;
+}
+.item-4 {
+  grid-row: 2 / 2;
+  grid-column: 2 / 2;
+  background-color: #ccc;
+}
